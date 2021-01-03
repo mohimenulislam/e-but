@@ -1,0 +1,35 @@
+.new_product {
+    background-color: #f1f1f1;
+    padding: 45px 0;
+    .new_product_image {
+        img {
+            width: 100%;
+        }
+    }
+    .new_product_text {
+        h5 {
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 40px;
+            color: #de4644;
+            font-weight: 400;
+        }
+        h4 {
+            margin: 10px 0;
+        }
+    }
+    .timer {
+        width: auto;
+        height: auto;
+        .timer_child {
+            display: inline-block;
+            border: 1px solid #5a5a5a;
+            width: 80px;
+            height: 80px;
+            text-align: center;
+            margin-right: 30px;
+        }
+    }
+}
+

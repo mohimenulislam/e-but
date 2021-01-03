@@ -1,0 +1,57 @@
+nav  {
+    ul {
+        li {
+            a {
+                color: #222222 !important;
+                font-weight: 500;
+                position: relative;
+                &:hover {
+                    color: #de4644 !important;
+                }
+                &:hover::after {
+                    position: absolute;
+                    content: "";
+                    top: 35px;
+                    left: 10px;
+                    width: 24px;
+                    background-color: #de4644;
+                    height: 1px;
+                    transition: all linear.4s;
+                }
+                &:hover::before {
+                    position: absolute;
+                    content: "";
+                    top: 39px;
+                    left: 10px;
+                    width: 14px;
+                    background-color: #de4644;
+                    height: 1px;
+                    transition: all linear.4s;
+                }
+            }
+        }
+    }
+}
+.navbar-collapse {
+    width: 80%;
+}
+.search {
+    position: relative;
+    input[type = "text"] {
+        opacity: 0;
+        cursor: pointer;
+        background: transparent;
+    }
+    input[type = "text"]:focus {
+        opacity: 1;
+        cursor: text;
+    }
+    .fa-search {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        cursor: pointer;
+    }
+}
+
+

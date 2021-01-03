@@ -1,0 +1,60 @@
+.header_top {
+    background-color: #444444;
+    .top_left {
+        position: relative;
+        &::after {
+            @extend %header_top_small_bar;
+            top: 0;
+            left: 50px;
+        }
+        &::before {
+            @extend %header_top_small_bar;
+            top: 0;
+            left: 105px;
+        }
+        .lan, .money{
+            color: #dddddd;
+            background: transparent;
+            padding: 15.5px 0;
+            font-size: 13px;
+            font-weight: 400;
+            border: none;
+        }
+        .number {
+            color: #dddddd;
+            padding-left: 10px;
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 400;
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.top_right {
+    text-align: right;
+    position: relative;
+    &::after {
+        @extend %header_top_small_bar;
+        top: 0;
+        left: 122px;
+ 
+    }
+    &::before {
+        @extend %header_top_small_bar;
+        top: 0;
+        left: 247px;
+    }
+    .wish, .account, .login {
+        display: inline-block;
+        padding: 15.5px 0;
+        color: #dddddd;
+        padding-left: 25px;
+        font-size: 13px;
+        p {
+            margin-bottom: 0;
+        }
+    }
+}

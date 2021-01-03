@@ -1,0 +1,73 @@
+.banner {
+    padding: 150px 0;
+    background-image: url(../img/hero_image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #00000080;
+    }
+}
+.banner_text {
+    z-index: 99;
+    position: relative;
+    h3 {
+        color: #de4644;
+        font-size: 70px;
+        font-weight: 700;
+    }
+    h4 {
+        font-size: 40px;
+        color: #ffffff;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin: 15px 0 ;
+    }
+    p {
+        color: #f1f1f1;
+        font-size: 14px;
+        margin-bottom: 25px;
+        padding-right: 600px;
+    }
+}
+.view_more {
+    @extend %common_button;
+    background-color: transparent;
+    margin-right: 30px;
+}
+.purchase {
+    @extend %common_button;
+    background-color: transparent;
+    
+}
+.view_more:hover,.purchase:hover {
+    background-color: #de4644;
+    border: 1px solid #de4644;
+} 
+.banner_arrow {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99;
+    .fa-chevron-left, .fa-chevron-right {
+        border: 1px solid #ffffff;
+        color: #ffffff;
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+        transition: 0.3s;
+        margin-right: 10px;
+    }
+    .fa-chevron-left:hover, .fa-chevron-right:hover {
+        background-color: #de4644;
+        border: 1px solid #de4644;
+    }
+}

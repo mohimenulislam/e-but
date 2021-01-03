@@ -1,0 +1,32 @@
+%header_top_small_bar {
+    position: absolute;
+    content: "";
+    background-color: #dddddd;
+    height: 50px;
+    width: 1px;
+}
+
+%common_button {
+    padding: 10px 15px;
+    border: none;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+%single_line {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: #de4644;
+    width: 170px;
+}
+%small_sinle_line {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: #de4644;
+    width: 85px;
+}

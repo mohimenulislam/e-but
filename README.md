@@ -1,2 +1,2 @@
-# e-but
+# e-buy
 E-BUY psd to html

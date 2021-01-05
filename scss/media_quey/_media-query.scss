@@ -1,0 +1,42 @@
+// extra small: 575px
+//small device: 576px to 767px
+// medium devie: 768px to 991px
+// large device: 992px to 1199px
+// extra large device: 1200px
+@media(max-width:575px) {
+    .header_top {
+        position: relative;
+        &::after {
+            position: absolute;
+            content: "";
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: #dddddd;
+            transform: translateY(-50%);
+        }
+        .top_left {
+            text-align: center;
+            &::after {
+                left: 147px; 
+                height: 49px;
+            }
+            &::before {
+                left: 205px;
+                height: 49px;
+            }
+        }
+        .top_right {
+            text-align: center;
+            &::after {
+                left: 163px;
+                height: 49px;
+            }
+            &::before {
+                left: 281px;
+                height: 49px;
+            }
+        }
+    }
+}
